@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+       <!--  <meta http-equiv="Content-Security-Policy" content="script-src 'self' data: gap: http://192.168.12.237:80/sip/cadastrar/app; 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' data: gap: http://www.confresa.gilp.com.br:80/cadastrar/app 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+        <title>Ilumina Confresa</title>
+        <link rel="stylesheet" href="lib/framework7/css/framework7.material.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
+
+
+    <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+       <div class = "views">
+         <div class = "view view-main">
+
+            <div class = "pages">
+               <div data-page = "index" class = "page theme-black navbar-fixed">
+               <div class = "navbar">
+                     <div class = "navbar-inner">
+                       <div class = "left">  <a href = "#" class = "open-panel link icon-only"> <i class = "icon icon-bars"></i></a></div>
+                        <div class = "center">Ilumina Confresa</div>
+                       <div class = "right"> </div>
+                     </div>
+                </div>
+               
+               
+  <div class="toolbar toolbar-bottom">
+    <div class="toolbar-inner">
+      <a class="link"></a>
+      <a class="link"><img alt="" src="img/logo_branca.png" style="width: 100px; height: alto;"></a>
+      <a class="link"></a>
+    </div>
+  </div>
+               
+                <div class = "page-content login-screen-content">
+                  <div class = "login-screen-title"><img alt="" src="img/logo.png" style="width: 200px; height: alto;"></div>
+                  
+                  <div class = "card">
+                        <div class = "card-content">
+                           <div class = "card-content-inner">
+<p align="justify">Aqui você pode registrar e acompanhar o pedido de reparo de mau funcionamento de iluminação pública, como lâmpadas apagadas, com iluminação instável ou acesa durante o dia no município de Confresa/MT.</p>
+
+
+</div>
+         </div>
+                     </div>
+   
+          
+                     <div class = "list-block">
+                       
+                        <div class = "content-block">
+                        <p class = "buttons-row">
+                            <a href="#" data-popup=".my-popup" class="open-popup link button button-raised">Consultar Solicitação</a>
+                         </p>
+                      
+                         <p class = "buttons-row">
+                            <a href = "#" class ="open-login-screen link button-fill  button button-raised">Solicitar Reparo</a>
+                         </p>
+                     </div>
+                     </div>
+                 
+                
+                     
+               </div>
+               </div>
+            </div>
+            
+         </div>
+      </div>
+    
+    <!-- xxxxxxxxxxxxxxxxxxxxx -->
+    
+     <div class = "panel-overlay"></div>
+      
+      <div class = "panel panel-left panel-reveal">
+      
+      <div class = "content-block-title">
+      <img alt="" src="img/logo.png" style="width: 180px; height: alto;">
+      
+      </div>
+      
+         <div class = "content-block">
+         <div class = "content-block-inner">
+         <p>Aqui você pode registrar e acompanhar o pedido de reparo de iluminação pública.</p>
+         </div>
+         </div>
+           
+           
+         <div class = "content-block">
+       
+         <div class = "list-block">
+        
+         <ul>
+          <li class = "item-content">
+          <div class = "item-media"><i class="material-icons">add_circle</i></div>
+          <div class = "item-inner">
+          <div class = "item-title"><a href = "#" class ="open-login-screen link">Solicitar Reparo</a></div>
+          <!-- <div class = "item-after"> <span class = "badge">78</span></div> -->
+          </div>
+          </li>
+          
+          <li class = "item-content">
+          <div class = "item-media"><i class="material-icons">search</i></div>
+          <div class = "item-inner">
+          <div class = "item-title"><a href="#" data-popup=".my-popup" class="open-popup link">Consultar Reparo</a></div>
+          <!-- <div class = "item-after"> <span class = "badge">78</span></div> -->
+          </div>
+          </li>
+          
+          <li class = "item-content">
+          <div class = "item-media"><i class="material-icons">contact_phone</i></div>
+          <div class = "item-inner">
+          <div class = "item-title"><a href="#" data-popup=".contatos" class="open-popup link">Contatos</a></div>
+          <!-- <div class = "item-after"> <span class = "badge">78</span></div> -->
+          </div>
+          </li>
+          
+           <li class = "item-content">
+          <div class = "item-media"><i class="material-icons">info</i></div>
+          <div class = "item-inner">
+          <div class = "item-title"><a href="#" data-popup=".sobre" class="open-popup link">Sobre o App</a></div>
+          <!-- <div class = "item-after"> <span class = "badge">78</span></div> -->
+          </div>
+          </li>
+          
+         </ul>
+
+         </div>
+         </div>
+          
+
+         
+      </div>
+  
+    
+     <!-- xxxxxxxxxxxxxxxxxxxxx -->
+    
+    
+    <div class="popup sobre">
+  <div class="view">
+    <div class="page theme-black navbar-fixed">
+      <div class="navbar">
+         <div class="navbar-inner">
+          <div class = "left">  <a href = "#" class = "close-popup link icon-only"> <i class = "icon icon-back"></i></a></div>
+          <div class="center">Sobre o App</div>
+          <div class="right">
+            <!-- Link to close popup -->
+            <a class="link close-popup"></a>
+          </div>
+        </div>
+      </div>
+      <div class="page-content">
+       <div class = "card">
+                      
+                        <div class = "card-content">
+                           <div class = "card-content-inner">
+<b>Desenvolvido por: </b>Metke Sistemas<br/>
+<b>Versão: </b>1.0<br/>
+<b>Acesse: </b>www.metkesistemas.com.br
+                          </div>
+                        </div>
+                     </div>
+      </div>
+    </div>
+  </div>
+  ...
+</div>
+    
+    
+    
+    
+    
+    <!-- xxxxxxxxxxxxxxxxxxxxx -->
+    
+    
+    <div class="popup contatos">
+  <div class="view">
+    <div class="page theme-black navbar-fixed">
+      <div class="navbar">
+         <div class="navbar-inner">
+          <div class = "left">  <a href = "#" class = "close-popup link icon-only"> <i class = "icon icon-back"></i></a></div>
+          <div class="center">Contatos</div>
+          <div class="right">
+            <!-- Link to close popup -->
+            <a class="link close-popup"></a>
+          </div>
+        </div>
+      </div>
+      <div class="page-content">
+      
+<div class = "card">
+<div class = "card-content">
+<div class = "card-content-inner">
+<b>SECRETARIA DE PLANEJAMENTO</b><br/>
+<b>Telefone: </b>66 3564-2237<br/>
+<b>Endereço: </b><br/>Avenida Industrial, nº 247, Vila Nova<br/>
+CEP: 78652-000 - Confresa/MT.
+</div>
+</div>
+</div>
+
+<div class = "card">
+<div class = "card-content">
+<div class = "card-content-inner">
+<b>PREFEITURA DE CONFRESA/MT</b><br/>
+<b>Telefone: </b>66 3564-1818<br/>
+<b>Endereço: </b><br/>Avenida Centro Oeste, nº 286, Centro<br/>
+CEP: 78652-000 - Confresa/MT.
+</div>
+</div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+  ...
+</div>
+    
+    
+      
+    <!-- xxxxxxxxxxxxxxxxxxxxx -->
+    
+    <div class="popup my-popup">
+  <div class="view">
+    <div class="page theme-black navbar-fixed">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class = "left">  <a href = "#" class = "close-popup link icon-only"> <i class = "icon icon-back"></i></a></div>
+          <div class="center">Consultar</div>
+          <div class="right">
+            <!-- Link to close popup -->
+            <a class="link close-popup"></a>
+          </div>
+        </div>
+      </div>
+      <div class="page-content">
+       
+       <div class = "consultar-ordem card">
+                          <form id="consultar" >
+                           <div class = "list-block"> 
+                            <ul>
+                         <li>
+                              <div class = "item-content">
+                                 <div class = "item-inner">
+                                    <div class = "item-input">
+                                       <input type = "text" name="consulta" placeholder = "Digite o Protocolo">
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           
+                          <li> <a href = "#" id="teste" class ="ordem button button-fill button-raised">Consultar</a></li>
+                           </ul>
+                           </div>
+                                         
+      </form>
+                   
+                            
+                        </div> 
+    
+                   <!-- Virtual List --><br/><br/>
+<div class=" virtual-list">
+  
+  <!-- keep it empty -->
+
+</div>
+    
+    <!-- 
+    
+    
+                       <div class = "card">
+                        <div class = "card-header"><b>20180505450454</b></div>
+                        <div class = "card-content">
+                           <div class = "card-content-inner">
+<b>Reclamante: </b>Hudson Kennedy de Sousa<br/>
+<b>Criado em: </b>19/11/2018 às 16:15<br/>
+<b>Situação Atual: </b>Concluído
+                          </div>
+                        </div>
+                     </div>
+
+ -->
+
+
+      </div>
+    </div>
+  </div>
+  ...
+</div>
+    
+    <!-- xxxxxxxxxxxxxxxxxxxxx -->  
+    
+    
+    <div class = "login-screen">
+         <div class = "view">
+            <div class = "page theme-black ">
+
+     <div data-page = "home" class = "page navbar-fixed">
+                  <div class = "navbar">
+                     <div class = "navbar-inner">
+                        <div class = "left">  <a href = "#" class = "close-login-screen link icon-only"> <i class = "icon icon-back"></i></a></div>
+                        <div class = "center">Solicitar Reparo</div>
+                        <div class = "right"> </div>
+                     </div>
+                  </div>
+                  
+                  <div class = "cadastro page-content pull-to-refresh-content">
+                  
+                   <form id="cadastro" >
+                     <div class = "list-block">
+                    
+                        <ul>
+                         <li>
+                              <div class = "item-content">
+                                 <div class = "item-inner">
+                                    <div class = "item-title label">Nº do poste:</div>
+                                    <div class = "item-input">
+                                       <input type = "text" name="poste" placeholder = "Informe número do poste">
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class = "item-content">
+                                 <div class = "item-inner">
+                                    <div class = "item-title label">Nome:</div>
+                                    <div class = "item-input">
+                                       <input type = "text" name="nome_solicitante" placeholder = "Digite seu nome">
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           
+                            <li>
+                              <div class = "item-content">
+                                 <div class = "item-inner">
+                                    <div class = "item-title label">Celular:</div>
+                                    <div class = "item-input">
+                                       <input type = "text" name="celular" data-mask="(00) 0000-0000" data-mask-selectonfocus="true" />
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           
+                           <li>
+                              <div class = "item-content">
+                                 <div class = "item-inner">
+                                    <div class = "item-title label">Endereço:</div>
+                                    <div class = "item-input">
+                                       <input type = "text" name="endereco" placeholder = "Digite o nome da rua.">
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           
+                           <li>
+                              <div class = "item-content">
+                                 <div class = "item-inner">
+                                    <div class = "item-title label">Número:</div>
+                                    <div class = "item-input">
+                                       <input type = "text" name="numero" placeholder = "Imóvel mais próximo.">
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           
+                            <li>
+                              <div class = "item-content">
+                                 <div class = "item-inner">
+                                    <div class = "item-title label">Referência:</div>
+                                    <div class = "item-input">
+                                       <input type = "text" name="referencia" placeholder = "Informe um ponto de referência.">
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                          
+                          
+                          <li>
+                              <a href = "#" data-open-in = "picker" class = "item-link smart-select">
+                              
+                                 <select name = "bairros">
+                                    <option value = "1" selected>Selecione um Bairro</option>
+                                  <option value="2">Aeroporto</option>
+<option value="3">Babinski</option>
+<option value="4">Centro</option>
+<option value="5">Jardim Planalto</option>
+<option value="6">Pavilhão</option>
+<option value="7">Saúde</option>
+<option value="8">Sudoeste</option>
+<option value="9">Universitário</option>
+<option value="10">Vila Nova</option>
+<option value="11">Arco Irís</option>
+<option value="12">Arco Irís II</option>
+<option value="13">Buritis</option>
+<option value="14">Buritis II</option>
+<option value="15">EcoPark</option>
+<option value="16">Faiçalville</option>
+<option value="17">Jardim do Eden</option>
+<option value="18">Jardim do Eden II</option>
+<option value="19">Jardim Vitória</option>
+<option value="20">Jardim Vitória II</option>
+<option value="21">Jockey Club</option>
+<option value="22">Maravilha</option>
+<option value="23">Morada Nova I</option>
+<option value="24">Morada Nova II</option>
+<option value="25">Morada Nova III</option>
+<option value="26">Santa Luzia Premium</option>
+<option value="27">Santa Luzia I</option>
+<option value="28">Santa Luzia II</option>
+<option value="29">Teotônio</option>
+<option value="30">Triunfo</option>
+<option value="31">Vila 2000</option>
+<option value="32">Jardim Tropical</option>
+<option value="33">Sul</option>
+<option value="34">Santa Genoveva</option>
+<option value="35">Jerusalém</option>
+<option value="36">Leblon</option>
+<option value="37">Colina Park</option>
+<option value="38">Cidade Nova</option>
+<option value="39">Jardim das Palmeiras</option>
+<option value="40">Ouro Branco</option>
+<option value="41">Universitário II</option>
+<option value="42">Veranópolis</option>
+<option value="43">Jacaré Valente</option>
+                                 </select>
+                                 
+                                 <div class = "item-content">
+                                    <div class = "item-inner">
+                                       <div class = "item-title">Selecione o bairro:</div>
+                                    </div>
+                                 </div>
+                              </a>
+                           </li>
+                           
+                         
+                          
+                        </ul>
+                     </div>
+                     
+                      <div class = "content-block-title">Selecione um Problema:</div>
+                     <div class = "list-block">
+                        <ul>
+                             <li>
+   <label class = "label-checkbox item-content">
+   <input type = "checkbox" name = "problemas" value = "1">
+   <div class = "item-media"><i class = "icon icon-form-checkbox"></i></div>
+   <div class = "item-inner">
+   <div class = "item-title">Lâmpadas apagadas a noite</div>
+   </div>
+   </label>
+   </li>
+
+<li>
+<label class = "label-checkbox item-content">
+<input type = "checkbox" name = "problemas" value = "2">
+<div class = "item-media"><i class = "icon icon-form-checkbox"></i></div>
+<div class = "item-inner">
+<div class = "item-title">Poste sem braço e/ou lâmpada</div>
+</div>
+</label>
+</li>
+
+<li>
+<label class = "label-checkbox item-content">
+<input type = "checkbox" name = "problemas" value = "3">
+<div class = "item-media"><i class = "icon icon-form-checkbox"></i></div>
+<div class = "item-inner">
+<div class = "item-title">Lâmpadas acesas durante o dia</div>
+</div>
+</label>
+</li>
+
+<li>
+<label class = "label-checkbox item-content">
+<input type = "checkbox" name = "problemas" value = "4">
+<div class = "item-media"><i class = "icon icon-form-checkbox"></i></div>
+<div class = "item-inner">
+<div class = "item-title">Braço danificado</div>
+</div>
+</label>
+</li>
+
+<li>
+<label class = "label-checkbox item-content">
+<input type = "checkbox" name = "problemas" value = "5">
+<div class = "item-media"><i class = "icon icon-form-checkbox"></i></div>
+<div class = "item-inner">
+<div class = "item-title">Lâmpada apaga e acende</div>
+</div>
+</label>
+</li>
+
+<li>
+<label class = "label-checkbox item-content">
+<input type = "checkbox" name = "problemas" value = "7">
+<div class = "item-media"><i class = "icon icon-form-checkbox"></i></div>
+<div class = "item-inner">
+<div class = "item-title">Poste danificado</div>
+</div>
+</label>
+</li>
+                        </ul>
+                     </div>
+                     
+                     <div class = "list-block">
+                       
+                        <div class = "content-block">
+                        <p class = "buttons-row">
+                            <a href = "#" class ="cadastrar link button button-fill button-raised close-login-screen">Enviar</a>
+                            
+                        </p>
+                     </div>
+                     </div>
+                     
+                     </form> 
+                  </div>
+                     
+                     
+                   
+                  </div>
+                  
+               </div>
+              
+              
+            </div>
+         </div>
+         
+
+
+
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->     
+
+     
+    
+    
+    <script type="text/javascript" src="cordova.js"></script>
+   <!--  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script> -->
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+  <script type="text/javascript" src="js/my-app.js"></script>
+    </body>
+</html>
