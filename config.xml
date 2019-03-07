@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="br.com.gilp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="br.com.gilp.*" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Ilumina Confresa</name>
     <description>Aqui você pode registrar e acompanhar o pedido de reparo de mau funcionamento de iluminação pública, como lâmpadas apagadas, com iluminação instável ou acesa durante o dia no município de Confresa/MT.</description>
     <author email="desenvolvedor@metkesistemas.com.br" href="http://www.metkesistemas.com.br">Metke Sistemas</author>
